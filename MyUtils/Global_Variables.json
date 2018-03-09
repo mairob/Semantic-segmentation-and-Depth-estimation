@@ -1,0 +1,27 @@
+{
+    "Model": {
+		"BACKBONE_NAME" : "inception_resnet_v2"--or--"build_nasnet_mobile",
+        "BACKBONE_CKPT" : "Path/To/Backbone_Checkpoint/savepoint.ckpt",
+        "TRAINED_CKPT" : "Path/To/Our_FCN_Checkpoint/transfere_learned.ckpt",
+        "SAVING_PATH" : "Path/To/Where_to_save_the_FCN_Checkpoint/plus_basic_name_"
+    },
+
+    "Logging": {
+        "LOGGING_DIR": "Path/To/Where_to_save_the_Logging",
+        "STEP_FOR_CKPTSAVE": 5000
+    },
+
+    "Hyperparams": {
+		"NR_OF_TR_IMAGES": 22975--oder--2975,
+        "NR_OF_CLASSES": 20,
+		"BATCH_SIZE": 6,
+		"PSEUDO_BATCH_SIZE": ,
+		"EPOCHS_TO_RUN": 75,
+		"LEARN_RATE": 1e-4 --Base LearnRate before decay--,
+		"QUEUE_CAPACITY": 5000,
+		"MIN_DEQUEUE": 1500,
+		"QUEUE_THREADS": 4,
+		"MAX_SUMMARY_IMAGES": 3,
+		"TF_RECORD_FILE": "Path/To/Datasset_as_TFRecord.tfrecords"
+    }
+}

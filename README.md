@@ -10,3 +10,7 @@ To get started you need: 1) TensorFlow V.1.4+ with python 3 and GPU support, 2) 
 
 ## Recommendations 
 If you lack the basics mentioned above I suggest you to read >> http://neuralnetworksanddeeplearning.com  >> https://arxiv.org/pdf/1605.06211.pdf  >> http://www.deeplearningbook.org/
+
+
+## Pre-trained Backbones
+Please visit >> https://github.com/tensorflow/models/tree/master/research/slim
